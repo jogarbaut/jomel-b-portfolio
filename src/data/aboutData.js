@@ -3,20 +3,20 @@ const educationData= [
     id: 1,
     title: "Stanford University",
     subtitle: "Post-Degree Continuing Studies",
-    description: "Completed beginning Python course including Python algorithms.",
+    description: "Completed course on algorithms using Python.",
     image: "https://res.cloudinary.com/dgulbxrz1/image/upload/v1682638329/jomelbautista-portfolio/stanford.png"
   },
   {
     id: 2,
     title: "De Anza College",
     subtitle: "Post-Degree Continuing Studies",
-    description: "Completed web development courses in iOS Mobile Development, JavaScript, C++, and Photoshop.",
+    description: "Completed courses in iOS Mobile Development, JavaScript, C++, and Photoshop.",
     image: "https://res.cloudinary.com/dgulbxrz1/image/upload/v1682638274/jomelbautista-portfolio/de-anza.png"
   },
   {
     id: 3,
     title: "Cal Poly Pomona",
-    subtitle: "Bachelor of Science",
+    subtitle: "Bachelor of Science, First-Generation Student",
     description: "Awarded best oral presentation at 5th Annual CPP Research, Scholarship, and Creative Activities Conference. Co-project manager of senior project and board member of Engineers Without Borders.",
     image: "https://res.cloudinary.com/dgulbxrz1/image/upload/v1682638243/jomelbautista-portfolio/cpp.png"
   },
@@ -48,7 +48,7 @@ const certificateData = [
     id: 4,
     title: "Coding Dojo Coding Bootcamp",
     subtitle: "Full-Stack Developer Certifiate | 2022",
-    description: "Completed coursework, projects, and examinations in web fundamental, MERN, and Python/Flask technologies",
+    description: "Completed coursework, projects, and exams in web fundamental, MERN, and Python/Flask technologies",
     image: "https://res.cloudinary.com/dgulbxrz1/image/upload/v1682638261/jomelbautista-portfolio/coding-dojo.png"
   },
 ]

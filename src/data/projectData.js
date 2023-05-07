@@ -67,8 +67,8 @@ export const projectData = [
     title: "South Bay Rehab and Performance Website",
     about: "I developed a modern, mobile responsive business website for a new private chiropractic clinic. The client previously relied solely on a Google Business Page but did not like the limited customizations and inability to make their page look unique.\n\nThe client also had a previous website that was built with a basic HTML and CSS code structure. I used this project to develop truly reusable React components that could easily be utilized in other projects. Using the React framework, I also focused on modularizing the code so that data could easily be updated without too many modifications to the components themselves but rather just the data being passed into them as props.",
     challenges: "The challenge with this project was focusing on the reusability aspect of the components. To achieve this, the components had to be thoroughly planned out to be able to receive a variable amount of props.",
-    github: "google.com",
-    link: "google.com",
+    github: "https://github.com/jomelbautista/react-tkhmovement",
+    link: "https://southbayrehabandperformance.onrender.com/",
     techStack: "React",
     images: [
       {

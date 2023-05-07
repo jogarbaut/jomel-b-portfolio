@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import useMediaQuery from "../hooks/useMediaQuery"
 import NavLink from './NavLink'
 import { GoThreeBars, GoX } from "react-icons/go"
+import Button from './Button'
 
 const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isUserTopOfPage, setIsUserTopOfPage] = useState(true)
@@ -30,7 +31,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
   const renderedFullNavbar = (
     <>
-      <div className="flex items-center justify-between gap-4 text-sm">
+      <div className="flex items-center justify-between gap-4 font-semibold">
         <NavLink
           to="home"
           selectedPage={selectedPage}
@@ -67,8 +68,15 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           Connect
         </NavLink>
       </div>
-      <div className="flex items-center justify-between gap-4">
-        <button>Resume</button>
+      <div className="flex items-center justify-between">
+      <a
+            href="/assets/Bautista_Jomel_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
+            <Button primary>Download Resume</Button>
+          </a>
       </div>
     </>
   )
@@ -86,20 +94,27 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
     <div className="fixed right-0 left-0 z-20 min-h-min top-0 w-full bg-white drop-shadow-xl">
       <div className="flex justify-between pt-6 px-4">
         <div className="font-bold">
-          <h1>Jomel Bautista</h1>
+          <h1 className='text-xl'>Jomel Bautista</h1>
         </div>
         <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
           <GoX className="h-6 w-6 text-gray-400" />
         </button>
       </div>
-      <div className="ml-4 flex flex-col gap-4 text-sm py-4">
+      <div className="ml-4 flex flex-col gap-4 py-4">
         <NavLink to="home">Home</NavLink>
         <NavLink to="about">About</NavLink>
         <NavLink to="projects">Projects</NavLink>
         <NavLink to="techSkills">Tech Skills</NavLink>
         <NavLink to="connect">Connect</NavLink>
-        <div className="flex gap-4 justify-start">
-          <button>Resume</button>
+        <div className="flex justify-start">
+        <a
+            href="/assets/Bautista_Jomel_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
+            <Button primary>Download Resume</Button>
+          </a>
         </div>
       </div>
     </div>
@@ -110,9 +125,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
     <div
       className={`${navbarBackground} fixed top-0 z-10 flex w-full py-4 transition duration-300`}
     >
-      <div className="flex flex-row items-center justify-between max-w-7xl w-full mx-auto px-4">
-        <div className="font-bold">
-          <h1>Jomel Bautista</h1>
+      <div className="flex flex-row items-center justify-between max-w-7xl w-full mx-auto px-2">
+        <div className="font-semibold">
+          <h1 className='text-xl mr-8'>Jomel Bautista</h1>
         </div>
         {isLargeScreenAndAbove ? renderedFullNavbar : renderedMinimizedNavbar}
       </div>
