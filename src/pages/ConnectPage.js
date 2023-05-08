@@ -15,8 +15,14 @@ const ConnectPage = ({ setSelectedPage }) => {
         <SectionTitle>
           <h2 className="text-3xl font-bold my-8">Connect</h2>
           <div className="text-lg mb-8 w-full md:w-2/3 mx-auto">
+            <div>
+
             I am currently seeking out entry level developer positions. Please
             reach out if you would like to chat or work on a project together.
+            </div>
+            <div className="text-primary-500">
+              The best way to contact me is by email at jomelb.developer@gmail.com.
+            </div>
           </div>
         </SectionTitle>
       </motion.div>
@@ -40,7 +46,7 @@ const ConnectPage = ({ setSelectedPage }) => {
         <Button
           primary
           onClick={() => {
-            handleClick("mailto:jomelgbautista@gmail.com")
+            handleClick("mailto:jomelb.developer@gmail.com")
           }}
         >
           <CgMail className="h-12 w-12" />
