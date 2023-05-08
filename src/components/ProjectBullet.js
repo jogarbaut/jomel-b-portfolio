@@ -78,7 +78,7 @@ const ProjectBullet = ({ item }) => {
       <div className="flex flex-col items-start lg:flex-row gap-8 justify-start">
         {/* Text */}
         <div className="flex flex-col gap-4 basis-2/5">
-          <div className="w-full">
+          <div className="w-full border-primary-500 pb-4 border-b-2">
             <h3 className="md:text-2xl">{item.title}</h3>
             <p className="text-sm flex">
               <span className="text-primary-500 mr-1 font-semibold">
@@ -115,8 +115,9 @@ const ProjectBullet = ({ item }) => {
           <div className="md:flex md:items-center md:justify-center grid grid-cols-2 gap-2">
             {renderedImagesButtons}
           </div>
-
-          <Slider items={item[activeImages]} />
+          <div className="mt-12 md:mt-0">
+            <Slider items={item[activeImages]} />
+          </div>
         </div>
       </div>
     </article>

@@ -18,15 +18,15 @@ const Slider = ({ items }) => {
   }
 
   return (
-    <div className="w-full h-full rounded-xl relative grid content-center px-16">
+    <div className="w-full h-full rounded-xl relative grid content-center px-6">
       <div
-        className="absolute top-1/2 text-2xl left-1 rounded p-2 bg-gray-500/30 hover:bg-gray-500 text-white cursor-pointer hover:duration-300 duartion-300"
+        className="absolute top-1/2 text-2xl left-0 rounded p-2 bg-gray-500/30 hover:bg-gray-500 text-white cursor-pointer hover:duration-300 duartion-300"
         onClick={handlePreviousArrowClick}
       >
         <GoChevronLeft />
       </div>
       <div
-        className="absolute top-1/2 right-1 text-2xl rounded p-2 bg-gray-500/30 hover:bg-gray-500 text-white cursor-pointer hover:duration-300 duration-300"
+        className="absolute top-1/2 right-0 text-2xl rounded p-2 bg-gray-500/30 hover:bg-gray-500 text-white cursor-pointer hover:duration-300 duration-300"
         onClick={handleNextArrowClick}
       >
         <GoChevronRight />
