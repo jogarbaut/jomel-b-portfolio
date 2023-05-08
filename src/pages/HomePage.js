@@ -23,9 +23,9 @@ const HomePage = ({ setSelectedPage }) => {
             <Button secondary>Jump to Projects</Button>
           </AnchorLink>
           <a
-            href="/assets/Bautista_Jomel_Resume.pdf"
+            href="/Bautista_Jomel_Resume.pdf"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             download
           >
             <Button primary>Download Resume</Button>
